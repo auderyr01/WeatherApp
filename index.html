@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0635ae9478.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+
+    <div class="container">
+      <form id="search-form">
+        <div class="row">
+          <div class="col-9">
+            <input
+              type="search"
+              placeholder="TYPE A CITY..."
+              class="form-control"
+              autocomplete="off"
+              autofocus="on"
+              id="search-text-input"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              type="submit"
+              value="Search"
+              id="seach-button"
+              class="form-control btn btn-primary"
+            />
+          </div>
+        </div>
+      </form>
+
+      <h1 class="currentCity">
+        <strong></strong>
+      </h1>
+
+      <ul>
+        <li class="time"></li>
+        <li class="CurrentDate"></li>
+      </ul>
+         
+      <ul>
+        <li>
+      <strong> <span id="weather-description">  PARTLY CLOUDY </span></strong>
+        </li>
+    </ul>
+      
+      <div class="row">
+        <div class="col-6">
+          <h2>
+            <i class="fas fa-sun"></i>
+            <span class="degrees" id="current-temp" autofocus="on">47</span>
+            <small class="units"
+              ><a href="" id="celsius"> °C </a> |
+              <a href="" id="farenheit">°F </a></small
+            >
+            <p id="feels-like">  </p>
+          </h2>
+
+          <h3>
+            <ul>
+              <li>
+                <span id="humidity"></span>
+              </li>
+              <li>
+                <span id="wind"> </span>
+              </li>
+            </ul>
+          </h3>
+        </div>
+
+        <div class="col-6">
+          <h4>Weekly Forecast</h4>
+          <div class="row">
+            <div class="col-2 wed">
+              Wed <br />
+              <i class="fas fa-cloud-sun"></i> <br />
+              <div>
+                ↑80° <br />
+                ↓42°
+              </div>
+            </div>
+            <div class="col-2 thurs">
+              Thurs <br />
+              <i class="fas fa-sun"></i> <br />
+              <div>
+                ↑84° <br />
+                ↓58°
+              </div>
+            </div>
+            <div class="col-2 fri">
+              Fri <br />
+              <i class="fas fa-sun"></i> <br />
+              <div>
+                ↑86° <br />
+                ↓51°
+              </div>
+            </div>
+            <div class="col-2 sat">
+              Sat <br />
+              <i class="fas fa-sun"></i> <br />
+              <div>
+                ↑80° <br />
+                ↓44°
+              </div>
+            </div>
+            <div class="col-2 sun">
+              Sun <br />
+              <i class="fas fa-cloud-sun-rain"></i> <br />
+              <div>
+                ↑79° <br />
+                ↓46°
+              </div>
+            </div>
+            <div class="col-2 mon">
+              Mon <br />
+              <i class="fas fa-cloud-sun-rain"></i> <br />
+              <div>
+                ↑62° <br />
+                ↓46°
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+
+    <footer>
+      <hr />
+      Created by <a href="https://www.linkedin.com/in/robertsonmba" target="blank"> Audrey Robertson<a>
+        <br />
+      <span>Photo by <a href="https://unsplash.com/@mmckee30?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="blank">Mitch Mckee</a> on <a href="https://unsplash.com/s/photos/light-house?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="blank">Unsplash</a></span>
+    </footer>
+  </body>
+</html>
