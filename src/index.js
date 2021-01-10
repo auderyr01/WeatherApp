@@ -104,7 +104,7 @@ function showTemperature(response) {
   wind.innerHTML = `wind: ` + Math.round(response.data.wind.speed) + ` mph`;
   let trueFeel = document.querySelector("#feels-like");
   trueFeel.innerHTML =
-    `True Feel  ` + Math.round(response.data.main.feels_like) + `°F`;
+    `TruFeel  ` + Math.round(response.data.main.feels_like) + `°F`;
   let description = document.querySelector("#weather-description");
   description.innerHTML = response.data.weather[0].description;
 }
@@ -138,4 +138,4 @@ function convertfarenheit(event) {
 let farenheitConversion = document.querySelector("#farenheit");
 farenheitConversion.addEventListener("click", convertfarenheit);
 
-searchCity("Singapore");
+searchCity("Italy");
