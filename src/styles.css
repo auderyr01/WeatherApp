@@ -19,6 +19,7 @@
 h3 ul {
   font-family: "Amiri", serif;
   font-family: "EB Garamond", serif;
+  text-transform: capitalize;
   font-size: 15px;
   list-style-type: none;
   color: blue;

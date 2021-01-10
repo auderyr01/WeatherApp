@@ -92,21 +92,23 @@ function showTemperature(response) {
   //showCity Call
   let h1 = document.querySelector("h1");
   let city = response.data.name;
-  h1.innerHTML = city;
   let currentTemp = document.querySelector("#current-temp");
+  h1.innerHTML = city;
   currentTemp.innerHTML = Math.round(response.data.main.temp);
 
   //Weather Conditions
-  let humidity = document.querySelector("#humidity");
-  humidity.innerHTML =
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  let trueFeelElement = document.querySelector("#feels-like");
+  let descriptionElement = document.querySelector("#weather-description");
+
+  humidityElement.innerHTML =
     `humidity: ` + Math.round(response.data.main.humidity) + `%`;
-  let wind = document.querySelector("#wind");
-  wind.innerHTML = `wind: ` + Math.round(response.data.wind.speed) + ` mph`;
-  let trueFeel = document.querySelector("#feels-like");
-  trueFeel.innerHTML =
+  windElement.innerHTML =
+    `wind: ` + Math.round(response.data.wind.speed) + ` mph`;
+  trueFeelElement.innerHTML =
     `TruFeel  ` + Math.round(response.data.main.feels_like) + `°F`;
-  let description = document.querySelector("#weather-description");
-  description.innerHTML = response.data.weather[0].description;
+  descriptionElement.innerHTML = response.data.weather[0].description;
 }
 
 function searchCity(city) {
