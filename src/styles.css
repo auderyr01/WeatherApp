@@ -1,62 +1,19 @@
 .app-inside-border {
   max-width: 500px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 10px;
   border: 0.5px solid black;
-  border-radius: 30% 30% 80% 200%;
+  border-radius: 30% 80% 250% 900%;
 }
 
 .app-outside-border {
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
+  padding-top: 13px;
+  padding-right: 15px;
+  padding-left: 15px;
   border: 1px solid black;
   border-radius: 30px;
-}
-
-h1 {
-  left: 8px;
-  color: black;
-  font-size: 35px;
-  top: 60px;
-  margin-top: 50px;
-  margin-bottom: 2px;
-}
-
-ul {
-  list-style-type: none;
-  margin-left: -40px;
-  color: #0069d9;
-}
-
-h2 i {
-  color: orange;
-  font-size: 100px;
-  position: relative;
-}
-
-h2 span {
-  position: relative;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 130px;
-  color: yellow;
-}
-
-h2 small {
-  position: relative;
-  font-size: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  top: -65px;
-  left: -15px;
-}
-
-h2 p {
-  position: relative;
-  font-size: 16px;
-  left: 130px;
-  top: -15px;
-  margin-bottom: 30px;
-  color: #0056ba;
 }
 
 h3 ul {
@@ -90,22 +47,67 @@ h4 {
 }
 
 form {
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin: 20px 5px 25px 15px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 2;
   font-size: 18px;
-  max-width: 600px;
+  max-width: 400px;
 }
 
-.background {
-  position: absolute;
-  width: 1365px;
-  height: 625px;
+ul {
+  font-size: 15px;
+  list-style-type: none;
+  margin: 40px 0px 0px -40px;
+  color: blue;
+}
+
+.time-date {
+  font-size: 15px;
+  list-style-type: none;
+  margin-left: -25px;
+  color: #0069d9;
+}
+
+.currentCity {
+  margin-left: 40px;
+  color: black;
+  font-size: 40px;
+  position: relative;
+  top: 15px;
+}
+
+.weather-image {
+  color: orange;
+  font-size: 60px;
+  position: relative;
+  top: -3px;
+  left: 5px;
+}
+
+.degrees {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 80px;
+  color: yellow;
+  position: relative;
+  top: 5px;
+  left: 5px;
 }
 
 .units {
-  font-size: 30px;
+  font-size: 20px;
+  position: relative;
+  top: -40px;
+  left: -3px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.true-feel {
+  position: relative;
+  font-size: 15px;
+  left: 75px;
+  top: 5px;
+  color: #0056ba;
+  margin-bottom: 80px;
 }
 
 footer {

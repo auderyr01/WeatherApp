@@ -99,9 +99,9 @@ function showTemperature(response) {
   //Weather Conditions
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML =
-    `HUMIDITY: ` + Math.round(response.data.main.humidity) + ` %`;
+    `humidity: ` + Math.round(response.data.main.humidity) + `%`;
   let wind = document.querySelector("#wind");
-  wind.innerHTML = `WIND: ` + Math.round(response.data.wind.speed) + ` mph`;
+  wind.innerHTML = `wind: ` + Math.round(response.data.wind.speed) + ` mph`;
   let trueFeel = document.querySelector("#feels-like");
   trueFeel.innerHTML =
     `True Feel  ` + Math.round(response.data.main.feels_like) + `°F`;
@@ -138,4 +138,4 @@ function convertfarenheit(event) {
 let farenheitConversion = document.querySelector("#farenheit");
 farenheitConversion.addEventListener("click", convertfarenheit);
 
-searchCity("Italy");
+searchCity("Singapore");
