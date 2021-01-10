@@ -8,7 +8,7 @@
 
 .app-outside-border {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 30px auto;
   padding-top: 20px;
   padding-right: 10px;
   padding-left: 10px;
@@ -17,15 +17,19 @@
 }
 
 h3 ul {
-  font-size: 13px;
+  font-family: "Amiri", serif;
+  font-family: "EB Garamond", serif;
+  font-size: 15px;
   list-style-type: none;
   color: blue;
   position: relative;
-  top: -40px;
-  left: -10px;
+  top: -70px;
+  left: -25px;
 }
 
 h4 {
+  font-family: "Amiri", serif;
+  font-family: "EB Garamond", serif;
   color: #0056ba;
   position: relative;
   top: -30px;
@@ -33,24 +37,28 @@ h4 {
 }
 
 form {
+  font-family: "EB Garamond", serif;
   margin: 20px 5px 20px 15px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 2;
   font-size: 18px;
   max-width: 400px;
 }
 
 .time-date {
-  font-size: 15px;
+  font-family: "EB Garamond", serif;
+  font-size: 16px;
   list-style-type: none;
   margin-left: -25px;
   color: #0069d9;
 }
 
 .currentCity {
-  margin: 0 15px;
+  font-family: "EB Garamond", serif;
+  position: relative;
   color: black;
   font-size: 40px;
+  left: 15px;
+  top: 15px;
 }
 
 .weather-image {
@@ -62,7 +70,7 @@ form {
 }
 
 .degrees {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "EB Garamond", serif;
   font-size: 80px;
   color: yellow;
   position: relative;
@@ -75,19 +83,22 @@ form {
   position: relative;
   top: -40px;
   left: -3px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "EB Garamond", serif;
 }
 
 .tru-feel {
+  font-family: "EB Garamond", serif;
   position: relative;
-  font-size: 15px;
-  left: 75px;
+  font-size: 18px;
+  left: 70px;
   top: 5px;
   color: #0056ba;
   margin-bottom: 65px;
 }
 
 .daily-forecast {
+  font-family: "Amiri", serif;
+  font-family: "EB Garamond", serif;
   top: -20px;
   color: black;
   letter-spacing: 1px;
