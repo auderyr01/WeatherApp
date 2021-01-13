@@ -62,28 +62,27 @@ form {
   top: 15px;
 }
 
-.descriptionImage {
-  color: orange;
+.description-image{
   font-size: 60px;
   position: relative;
-  top: 35px;
-  left: 5px;
+  top: -10px;
+  left: -10px;
 }
 
-.degrees {
+.temperature {
   font-family: "EB Garamond", serif;
   font-size: 80px;
   color: yellow;
   position: relative;
   top: 5px;
-  left: 5px;
+  left: -25px;
 }
 
 .units {
   font-size: 20px;
   position: relative;
-  top: -40px;
-  left: -3px;
+  top: -34px;
+  left: -25px;
   font-family: "EB Garamond", serif;
 }
 
@@ -91,8 +90,8 @@ form {
   font-family: "EB Garamond", serif;
   position: relative;
   font-size: 18px;
-  left: 70px;
-  top: 5px;
+  left: 77px;
+  top: -25px;
   color: #0056ba;
   margin-bottom: 65px;
 }
