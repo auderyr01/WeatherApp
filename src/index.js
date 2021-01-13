@@ -133,6 +133,9 @@ function convertCelsius(event) {
   let currentTemp = document.querySelector("#current-temp");
   let farenheitTemperature = currentTemp.innerHTML;
   currentTemp.innerHTML = Math.round(((FarenheitTemperature - 32) * 5) / 9);
+
+  farenheitConversion.classList.remove("select");
+  celsiusConversion.classList.add("select");
 }
 
 let celsiusConversion = document.querySelector("#celsius");
@@ -143,6 +146,9 @@ function convertfarenheit(event) {
   event.preventDefault();
   let currentTemp = document.querySelector("#current-temp");
   currentTemp.innerHTML = Math.round(FarenheitTemperature);
+
+  celsiusConversion.classList.remove("select");
+  farenheitConversion.classList.add("select");
 }
 
 let farenheitConversion = document.querySelector("#farenheit");

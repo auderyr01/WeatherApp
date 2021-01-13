@@ -62,7 +62,7 @@ form {
   top: 15px;
 }
 
-.description-image{
+.description-image {
   font-size: 60px;
   position: relative;
   top: -10px;
@@ -112,7 +112,15 @@ form {
   position: relative;
   left: 5px;
   font-size: 20px;
-  margin
+}
+
+.units .select {
+  color: black;
+  cursor: default;
+}
+
+.units .select:hover {
+  text-decoration: none;
 }
 
 footer {
