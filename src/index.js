@@ -68,10 +68,11 @@ function showDate(currentInfo) {
   ul.innerHTML = `${hour}:${minutes} ${meridiem}
   <br />
   ${day} ${month} ${date}, ${year}`;
+  setTimeout("showDate()", 1000);
 }
 
 let ul = document.querySelector("ul");
-showDate(ul);
+showDate();
 
 // Display City
 function showCity(event) {
