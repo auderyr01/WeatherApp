@@ -95,7 +95,9 @@ function showTemperature(response) {
   let city = response.data.name;
   let currentTemp = document.querySelector("#current-temp");
   h1.innerHTML = city;
-  currentTemp.innerHTML = Math.round(response.data.main.temp);
+
+  FarenheitTemperature = response.data.main.temp;
+  currentTemp.innerHTML = Math.round(FarenheitTemperature);
 
   //Weather Conditions
   let humidityElement = document.querySelector("#humidity");
@@ -129,8 +131,8 @@ function searchCity(city) {
 function convertCelsius(event) {
   event.preventDefault();
   let currentTemp = document.querySelector("#current-temp");
-  let farenheit = currentTemp.innerHTML;
-  currentTemp.innerHTML = Math.round(((farenheit - 32) * 5) / 9);
+  let farenheitTemperature = currentTemp.innerHTML;
+  currentTemp.innerHTML = Math.round(((FarenheitTemperature - 32) * 5) / 9);
 }
 
 let celsiusConversion = document.querySelector("#celsius");
@@ -140,11 +142,12 @@ celsiusConversion.addEventListener("click", convertCelsius);
 function convertfarenheit(event) {
   event.preventDefault();
   let currentTemp = document.querySelector("#current-temp");
-  let celsius = currentTemp.innerHTML;
-  currentTemp.innerHTML = Math.round(celsius * 1.8 + 32);
+  currentTemp.innerHTML = Math.round(FarenheitTemperature);
 }
 
 let farenheitConversion = document.querySelector("#farenheit");
 farenheitConversion.addEventListener("click", convertfarenheit);
+
+let farenheitTemperature = null;
 
 searchCity("Italy");
