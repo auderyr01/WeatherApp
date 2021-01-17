@@ -1,5 +1,5 @@
 .app-inside-border {
-  max-width: 480px;
+  max-width: 500px;
   max-height: 300px;
   margin: 0 auto;
   padding: 10px;
@@ -9,7 +9,7 @@
 }
 
 .app-outside-border {
-  max-width: 480px;
+  max-width: 500px;
   max-height: 550px;
   margin: 30px auto;
   padding-top: 20px;
