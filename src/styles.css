@@ -1,19 +1,23 @@
 .app-inside-border {
-  max-width: 500px;
+  max-width: 475px;
+  max-height: 300px;
   margin: 0 auto;
   padding: 10px;
   border: 0.5px solid black;
   border-radius: 30% 80% 250% 900%;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 
 .app-outside-border {
-  max-width: 600px;
+  max-width: 500px;
+  max-height: 550px;
   margin: 30px auto;
   padding-top: 20px;
   padding-right: 10px;
   padding-left: 10px;
   border: 1px solid black;
   border-radius: 5%;
+  background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
 }
 
 h3 ul {

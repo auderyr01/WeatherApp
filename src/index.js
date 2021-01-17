@@ -36,12 +36,9 @@ function showDate(currentInfo) {
     "11",
   ];
   let hour = hours[now.getHours()];
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
 
   let meridiem = "am";
-  if (hours <= [11]) {
+  if (hours < [11]) {
   } else {
     meridiem = "pm";
   }
@@ -89,7 +86,6 @@ form.addEventListener("submit", showCity);
 
 //Real-Time Data Temperature
 function showTemperature(response) {
-  console.log(response);
   //showCity Call
   let h1 = document.querySelector("h1");
   let city = response.data.name;
@@ -139,7 +135,6 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#hourly-forecast");
   forecastElement.innerHTML = null;
   let forecast = null;
-  console.log(forecast);
 
   for (let index = 0; index < 6; index++) {
     let forecast = response.data.list[index];
