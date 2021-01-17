@@ -10,7 +10,7 @@
 
 .app-outside-border {
   max-width: 500px;
-  max-height: 530px;
+  max-height: 550px;
   margin: 30px auto;
   padding-top: 20px;
   border: 1px solid #dadde1;
@@ -26,7 +26,7 @@ h3 ul {
   list-style-type: none;
   color: Darkblue;
   position: relative;
-  top: -70px;
+  top: -55px;
   left: -10px;
   line-height: 1.5;
 }
@@ -73,10 +73,10 @@ form {
 }
 
 .units {
-  font-size: 18px;
+  font-size: 17px;
   position: relative;
   top: -55px;
-  left: -25px;
+  left: -30px;
   font-family: "EB Garamond", serif;
 }
 
