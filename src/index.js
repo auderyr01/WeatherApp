@@ -120,9 +120,13 @@ function formatHours(timestamp) {
   let date = new Date(timestamp);
 
   let hours = date.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
+  if (hours === 22) {
+    hours = "10";
   }
+  if (hours === 13) {
+    hours = "1";
+  }
+
   let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
@@ -136,16 +140,14 @@ function displayForecast(response) {
   forecastElement.innerHTML = null;
   let forecast = null;
 
-  for (let index = 0; index < 6; index++) {
+  for (let index = 0; index < 5; index++) {
     let forecast = response.data.list[index];
     forecastElement.innerHTML += `
   <div class="col-2 forecast">
       ${formatHours(forecast.dt * 1000)}
-      <br />
       <img
       src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
       />
-      <br />
       <strong>↑${Math.round(forecast.main.temp_max)}°</strong>
       <br />
       ↓${Math.round(forecast.main.temp_min)}°
