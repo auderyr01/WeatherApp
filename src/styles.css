@@ -1,5 +1,5 @@
 .app-inside-border {
-  max-width: 500px;
+  max-width: 480px;
   max-height: 300px;
   margin: 0 auto;
   padding: 10px;
@@ -9,7 +9,7 @@
 }
 
 .app-outside-border {
-  max-width: 500px;
+  max-width: 480px;
   max-height: 550px;
   margin: 30px auto;
   padding-top: 20px;
@@ -30,7 +30,7 @@ h3 ul {
   left: -10px;
 }
 
-.heading {
+.forecast-heading {
   font-family: "Amiri", serif;
   font-family: "EB Garamond", serif;
   font-size: 20px;
@@ -82,7 +82,7 @@ form {
 }
 
 .units {
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   top: -55px;
   left: -25px;
@@ -110,15 +110,18 @@ form {
 
 .forecast {
   position: relative;
+  left: 20px;
   top: -35px;
-  left: 30px;
   color: white;
   font-size: 12px;
   line-height: 1.5;
+  text-align: right;
 }
 
-. footer {
-  color: #0056ba;
-  font-size: 12px;
-  margin: 0 auto;
+footer {
+  position: relative;
+  top: -25px;
+  color: darkblue;
+  font-size: 14px;
+  text-align: center;
 }
