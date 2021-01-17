@@ -145,12 +145,18 @@ function displayForecast(response) {
     forecastElement.innerHTML += `
   <div class="col-2 forecast">
       ${formatHours(forecast.dt * 1000)}
+      
       <img
-      src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
+      src="https://openweathermap.org/img/wn/${
+        forecast.weather[0].icon
+      }@2x.png" class="forecast-image"
       />
-      <strong>↑${Math.round(forecast.main.temp_max)}°</strong>
+      <strong class="high-temperature">↑${Math.round(
+        forecast.main.temp_max
+      )}°</strong>
       <br />
-      ↓${Math.round(forecast.main.temp_min)}°
+     <div class="low-temperature"> ↓${Math.round(forecast.main.temp_min)}°
+     </<div>
   `;
   }
 }

@@ -10,7 +10,7 @@
 
 .app-outside-border {
   max-width: 500px;
-  max-height: 550px;
+  max-height: 530px;
   margin: 30px auto;
   padding-top: 20px;
   border: 1px solid #dadde1;
@@ -28,16 +28,7 @@ h3 ul {
   position: relative;
   top: -70px;
   left: -10px;
-}
-
-.forecast-heading {
-  font-family: "Amiri", serif;
-  font-family: "EB Garamond", serif;
-  font-size: 20px;
-  color: Darkblue;
-  position: relative;
-  top: -40px;
-  left: 30px;
+  line-height: 1.5;
 }
 
 form {
@@ -108,6 +99,16 @@ form {
   text-decoration: none;
 }
 
+.forecast-heading {
+  font-family: "Amiri", serif;
+  font-family: "EB Garamond", serif;
+  font-size: 20px;
+  color: Darkblue;
+  position: relative;
+  top: -40px;
+  left: 30px;
+}
+
 .forecast {
   position: relative;
   left: 20px;
@@ -116,6 +117,26 @@ form {
   font-size: 12px;
   line-height: 1.5;
   text-align: right;
+}
+
+.forecast-image {
+  position: relative;
+  top: -20px;
+  right: 2px;
+}
+
+.high-temperature {
+  position: relative;
+  top: -40px;
+  left: 3px;
+  color: darkblue;
+}
+
+.low-temperature {
+  position: relative;
+  top: -40px;
+  left: 2px;
+  color: darkblue;
 }
 
 footer {
