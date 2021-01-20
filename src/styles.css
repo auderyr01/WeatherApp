@@ -73,10 +73,10 @@ form {
 }
 
 .units {
-  font-size: 17px;
   position: relative;
   top: -55px;
   left: -30px;
+  font-size: 17px;
   font-family: "EB Garamond", serif;
 }
 

@@ -181,7 +181,6 @@ function convertCelsius(event) {
   farenheitConversion.classList.remove("select");
   celsiusConversion.classList.add("select");
 }
-
 let celsiusConversion = document.querySelector("#celsius");
 celsiusConversion.addEventListener("click", convertCelsius);
 
@@ -194,10 +193,8 @@ function convertfarenheit(event) {
   celsiusConversion.classList.remove("select");
   farenheitConversion.classList.add("select");
 }
-
 let farenheitConversion = document.querySelector("#farenheit");
 farenheitConversion.addEventListener("click", convertfarenheit);
 
 let farenheitTemperature = null;
-
 searchCity("Italy");
