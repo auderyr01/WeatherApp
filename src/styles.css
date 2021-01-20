@@ -65,7 +65,7 @@ form {
 
 .temperature {
   font-family: "EB Garamond", serif;
-  font-size: 80px;
+  font-size: 70px;
   color: yellow;
   position: relative;
   top: -15px;
@@ -78,7 +78,6 @@ form {
   left: -30px;
   font-size: 17px;
   font-family: "EB Garamond", serif;
-  max-width: 25;
 }
 
 .tru-feel {
