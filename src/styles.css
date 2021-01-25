@@ -43,7 +43,7 @@ form {
   font-family: "EB Garamond", serif;
   font-size: 15px;
   list-style-type: none;
-  margin-left: -25px;
+  margin-left: -10px;
   color: darkblue;
 }
 
@@ -52,7 +52,7 @@ form {
   position: relative;
   color: black;
   font-size: 35px;
-  left: 15px;
+  left: 90px;
   top: 5px;
 }
 
@@ -60,7 +60,7 @@ form {
   font-size: 60px;
   position: relative;
   top: -28px;
-  left: -10px;
+  left: 63px;
 }
 
 .temperature {
@@ -69,13 +69,13 @@ form {
   color: yellow;
   position: relative;
   top: -15px;
-  left: -25px;
+  left: 40px;
 }
 
 .units {
   position: relative;
   top: -55px;
-  left: -30px;
+  left: 35px;
   font-size: 17px;
   font-family: "EB Garamond", serif;
 }
@@ -84,7 +84,7 @@ form {
   font-family: "EB Garamond", serif;
   position: relative;
   font-size: 18px;
-  left: 82px;
+  left: 142px;
   top: -45px;
   color: white;
   margin-bottom: 65px;
