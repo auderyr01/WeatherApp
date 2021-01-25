@@ -75,7 +75,7 @@ form {
 .units {
   position: relative;
   top: -55px;
-  left: 10px;
+  left: 8px;
   font-size: 17px;
   font-family: "EB Garamond", serif;
 }
@@ -122,6 +122,7 @@ form {
 .forecast-image {
   position: relative;
   top: -20px;
+  right: 2px;
 }
 
 .high-temperature {
